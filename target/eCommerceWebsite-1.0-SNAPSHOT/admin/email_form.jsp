@@ -66,7 +66,7 @@
                     <div class="card-body">
                         <center class="mt-4"><img src="../assets/images/logo-store.jpg" class="img-circle"
                                                   width="150" alt=""/>
-                            <h4 class="card-title mt-2">Venus Shop</h4>
+                            <h4 class="card-title mt-2">Fashion Shop</h4>
                         </center>
                     </div>
                 </div>
@@ -86,16 +86,16 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-12">Subject</label>
-                                <div class="col-md-12">
-                                    <input class="form-control form-control-line" type="text" name="subject"
+                                <label class="col-md-12" >Subject</label>
+                                <div class="col-md-12"style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+                                    <input class="form-control form-control-line" type="text" name="subject" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"
                                            required="required" size="50"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-12">Content</label>
-                                <div class="col-md-12">
-                                    <textarea class="form-control form-control-line" rows="5" cols="50" name="content"
+                                <div class="col-md-12" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+                                    <textarea class="form-control form-control-line" rows="5" cols="50" name="content" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"
                                               required="required"></textarea>
                                 </div>
                             </div>

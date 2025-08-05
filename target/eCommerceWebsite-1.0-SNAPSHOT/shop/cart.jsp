@@ -25,24 +25,24 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 mb-3 mb-m-1 text-md-left">
-                <a href=""><i class="fas fa-arrow-left mr-2"></i>Tiếp tục mua hàng</a>
+                <a href=""><i class="fas fa-arrow-left mr-2" ></i>Tiếp tục mua hàng</a>
             </div>
-            <div class="col-sm-6 text-md-right">
-                <a href="checkout" class="btn btn-primary btn-lg pl-5 pr-5">Checkout</a>
-            </div>
+            <%--            <div class="col-sm-6 text-md-right">--%>
+            <%--                <a href="checkout" class="btn btn-primary btn-lg pl-5 pr-5">Thanh toán</a>--%>
+            <%--            </div>--%>
         </div>
 
         <c:set var="cart" value="${sessionScope['cart']}"/>
 
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="mt-5 mb-2">Giỏ hàng của bạn</h2>
+                <h2 class="mt-5 mb-2" style="font-family:nunito;">GIỎ HÀNG CỦA BẠN</h2>
 
                 <c:if test="${cart.totalItems == 0}">
-                    <p class="mb-5">Chưa có gì trong giỏ hàng !!</p>
+                    <p class="mb-5" style="font-family:courier,Verdana,helvetica;">Chưa có gì trong giỏ hàng!!</p>
                 </c:if>
                 <c:if test="${cart.totalItems > 0}">
-                    <p class="mb-5"><span class="primary-color">${cart.totalItems}</span> Sản phẩm trong giỏ hàng</p>
+                    <p class="mb-5" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"><span class="primary-color">${cart.totalItems}</span> Sản phẩm trong giỏ hàng</p>
                 </c:if>
 
                 <c:if test="${message != null}">
@@ -57,9 +57,9 @@
                             <thead>
                             <tr>
                                 <th style="width: 5%">No</th>
-                                <th style="width: 50%"Sản phẩm</th>
-                                <th style="width: 10%">Số lượng</th>
-                                <th style="width: 10%">Giá</th>
+                                <th style="width: 50%">Sản Phẩm</th>
+                                <th style="width: 10%">Số Lượng</th>
+                                <th style="width: 10%">Đơn Giá</th>
                                 <th style="width: 10%">Tổng cộng</th>
                                 <th style="width: 15%">
                                     <a href="clear_cart" type="button" id="clearCart">Xóa tất cả</a>
@@ -85,12 +85,12 @@
                                     <td data-th="Quantity">
                                         <input type="hidden" name="productId" value="${item.key.productId}"/>
                                         <input type="number" name="quantity${status.index + 1}" value="${item.value}"
-                                               class="form-control text-center" value="1" min="1" required="required"/>
+                                               class="form-control text-center">
                                     </td>
 
-                                    <td data-th="Price">$${item.key.price}</td>
+                                    <td data-th="Price">$${item.key.price} </td>
 
-                                    <td>$${item.value * item.key.price}</td>
+                                    <td>$${item.value * item.key.price} </td>
 
                                     <td class="actions" data-th="">
                                         <div class="text_center">
@@ -111,17 +111,15 @@
                 <div class="float-right text-right">
                     <h4>Tổng cộng:</h4>
                     <h1>$${cart.totalAmount}</h1>
-                    <p>(Excluding Delivery)</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 mb-3 mb-m-1 text-md-left">
-                <a href="${pageContext.request.contextPath}/"><i class="fas fa-arrow-left mr-2"></i> Continue
-                    Shopping</a>
+                <a href="${pageContext.request.contextPath}/"><i class="fas fa-arrow-left mr-2"></i> Tiếp tục mua hàng</a>
             </div>
             <div class="col-sm-6 text-md-right">
-                <a href="checkout" class="btn btn-primary btn-lg pl-5 pr-5">Checkout</a>
+                <a href="checkout" class="btn btn-primary btn-lg pl-5 pr-5">Thanh Toán</a>
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@
 
     <%@ include file="common.jsp" %>
 
-    <title>Check out - Venus Shop</title>
+    <title>Thanh toán</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -27,23 +27,23 @@
         </c:if>
         <div class="row">
             <div class="col-sm-6 mb-3 mb-m-1 text-md-left">
-                <a href=""><i class="fas fa-arrow-left mr-2"></i>Continue Shopping</a>
+                <a href=""><i class="fas fa-arrow-left mr-2"></i>Tiếp tục mua hàng</a>
             </div>
             <div class="col-sm-6 text-md-right">
-                <a href="view_cart" class="btn btn-primary btn-lg pl-5 pr-5">Edit cart</a>
+                <a href="view_cart" class="btn btn-primary btn-lg pl-5 pr-5"style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Sửa lại giỏ hàng</a>
             </div>
         </div>
         <c:if test="${cart.totalItems > 0}">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="mt-5 mb-2">Review Your Order Detail </h2>
+                    <h2 class="mt-5 mb-2" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Chi Tiết Đơn Hàng </h2>
                     <table class="table table-condensed">
                         <tr>
                             <th style="width: 5%">No</th>
-                            <th style="width: 50%">Product</th>
-                            <th style="width: 15%">Price</th>
-                            <th style="width: 15%">Quantity</th>
-                            <th style="width: 15%">Subtotal</th>
+                            <th style="width: 50%">Sản phẩm</th>
+                            <th style="width: 15%">Đơn giá</th>
+                            <th style="width: 15%">Số lượng</th>
+                            <th style="width: 15%">Tổng cộng</th>
                         </tr>
 
                         <c:forEach items="${cart.items}" var="item" varStatus="status">
@@ -68,11 +68,11 @@
                         </c:forEach>
                     </table>
                     <div class="float-right text-right">
-                        <h4>${cart.totalQuantity} product(s)</h4>
-                        <h4>Subtotal: $${cart.totalAmount}</h4>
-                        <h4>Tax: $${tax}</h4>
-                        <h4>Shipping Fee: $${shippingFee}</h4>
-                        <h3>TOTAL: $${total}</h3>
+                        <h4>${cart.totalQuantity} sản phẩm</h4>
+                        <h4>Tổng: $${cart.totalAmount} </h4>
+                        <h4>Tax: $${tax} </h4>
+                        <h4>Giao hàng: $${shippingFee} </h4>
+                        <h3 style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">TỔNG CỘNG: $${total} </h3>
                     </div>
                 </div>
             </div>
@@ -81,57 +81,57 @@
             <form action="place_order" method="post">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2 class="mt-5 mb-2">Your Shipping Information</h2>
+                        <h2 class="mt-5 mb-2" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Thông tin nhận hàng</h2>
                         <div class="text-left">
                             <table align="center">
                                 <tr>
-                                    <td>First Name:</td>
-                                    <td><input type="text" name="recipientFirstName" value="${loggedCustomer.firstName}"
+                                    <td>Họ và tên lót:</td>
+                                    <td><input type="text" style="font-family:nunito;" name="recipientFirstName" value="${loggedCustomer.firstName}"
                                                required="required" maxlength="32"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Last Name:</td>
-                                    <td><input type="text" name="recipientLastName" value="${loggedCustomer.lastName}"
+                                    <td>Tên:</td>
+                                    <td><input type="text" style="font-family:nunito;" name="recipientLastName" value="${loggedCustomer.lastName}"
                                                required="required" maxlength="32"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Phone:</td>
-                                    <td><input type="number" name="recipientPhone" value="${loggedCustomer.phone}"
+                                    <td>Số điện thoại:</td>
+                                    <td><input type="number" style="font-family:nunito;" name="recipientPhone" value="${loggedCustomer.phone}"
                                                required="required" maxlength="16"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Address Line 1:</td>
-                                    <td><input type="text" name="recipientAddressLine1"
+                                    <td>Xã/Phường :</td>
+                                    <td><input type="text" style="font-family:nunito;" name="recipientAddressLine1"
                                                value="${loggedCustomer.addressLine1}"
                                                required="required" maxlength="128"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Address Line 2:</td>
-                                    <td><input type="text" name="recipientAddressLine2"
+                                    <td>Quận/Huyện:</td>
+                                    <td><input type="text" style="font-family:nunito;" name="recipientAddressLine2"
                                                value="${loggedCustomer.addressLine2}"
                                                required="required" maxlength="128"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>City:</td>
-                                    <td><input type="text" name="recipientCity" value="${loggedCustomer.city}"
+                                    <td>Tỉnh/Thành Phố:</td>
+                                    <td><input type="text" style="font-family:nunito;" name="recipientCity" value="${loggedCustomer.city}"
                                                required="required"
                                                maxlength="32">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>State:</td>
-                                    <td><input type="text" name="recipientState" value="${loggedCustomer.state}"
+                                    <td>Ấp:</td>
+                                    <td><input type="text" style="font-family:nunito;" name="recipientState" value="${loggedCustomer.state}"
                                                required="required"
                                                maxlength="32">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Zip Code:</td>
+                                    <td>Zip code:</td>
                                     <td><input type="text" name="recipientZipCode" value="${loggedCustomer.zipCode}"
                                                required="required" maxlength="16"/>
                                     </td>
@@ -148,12 +148,12 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Payment method:
+                                    <td>Phương thức thanh toán:
                                     </td>
-                                    <td>
+                                    <td style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
                                         <select name="paymentMethod" class="btn btn-lg btn-white dropdown-toggle">
-                                            <option value="Cash On Delivery">Cash On Delivery</option>
-                                            <option value="PayPal">PayPal or Credit card</option>
+                                            <option value="Cash On Delivery" >Trả tiền khi nhận hàng</option>
+                                            <option value="PayPal">PayPal hoặc thẻ tín dụng</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -162,9 +162,8 @@
                     </div>
 
                     <div class="products text-center container">
-                        <button class="btn btn-lg btn-outline-primary" type="submit">Place Order</button> &nbsp;&nbsp;
-                        <a class="btn btn-lg btn-outline-primary" href="${pageContext.request.contextPath}/">Continue
-                            Shopping</a>
+                        <button class="btn btn-lg btn-outline-primary" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;" type="submit">Đặt hàng</button> &nbsp;&nbsp;
+                        <a class="btn btn-lg btn-outline-primary" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;" href="${pageContext.request.contextPath}/">Tiếp tục mua hàng</a>
                     </div>
                 </div>
             </form>

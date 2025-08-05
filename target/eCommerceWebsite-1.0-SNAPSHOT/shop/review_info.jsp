@@ -12,12 +12,12 @@
     <script type="text/javascript" src="shop/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="shop/js/jquery.rateyo.min.js"></script>
 
-    <title>Write Review - Online Store</title>
+    <title>Viết đánh giá - Online Store</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>
 
-<h2 class="products text-center">You already wrote reviews for this product</h2>
+<h2 class="products text-center" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Bạn đã viết đánh giá cho sản phẩm này</h2>
 <div class="container">
     <div class="row">
         <div class="col-md-6 text-center">
@@ -25,13 +25,13 @@
                 <img class="img-fluid" src="data:image/jpg;base64,${product.base64Image}" alt=""/>
             </div>
         </div>
-        <div class="col-md-6 mt-5 mt-md-2 text-center text-md-left">
-            <h3>${product.title}</h3>
-            <h4>Headline</h4>
+        <div class="col-md-6 mt-5 mt-md-2 text-center text-md-left" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+            <h3 style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">${product.title}</h3>
+            <h4 style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Tiêu đề</h4>
             <p>${review.headline}</p>
-            <h4>Details</h4>
+            <h4 style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Chi tiết đánh giá</h4>
             <p>${review.comment}</p>
-            <a href="#" class="signup-image-link" onclick="history.go(-1);">Go back</a>
+            <a href="#" class="signup-image-link" onclick="history.go(-1);">Quay lại</a>
         </div>
     </div>
 </div>

@@ -10,19 +10,19 @@
 
     <link rel="stylesheet" href="shop/cssloginre/style.css">
 
-    <title>Customer Login</title>
+    <title>Đăng nhập</title>
 </head>
-<body>
+<body >
 <%@ include file="header.jsp" %>
 
 <section class="collections text-center">
-    <div class="main">
+    <div class="main" >
         <!-- Sing in  Form -->
         <section class="sign-in">
             <div class="container_sign">
                 <div class="signin-content">
                     <div class="signin-form">
-                        <h2 class="form-title">Sign in</h2>
+                        <h2 class="form-title" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Đăng nhập</h2>
 
                         <c:if test="${message != null}">
                             <div class="form-group">
@@ -34,38 +34,37 @@
 
                             <div class="form-group">
                                 <label><i
-                                        class="zmdi zmdi-account material-icons-name"></i></label> <input
-                                    type="email" name="email" placeholder="Your email"
+                                        class="zmdi zmdi-account material-icons-name"></i></label> <input style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"
+                                    type="email" name="email" placeholder="Địa chỉ email"
                                     required="required" maxlength="64"/>
                             </div>
 
                             <div class="form-group">
-                                <label><i class="zmdi zmdi-lock"></i></label> <input
-                                    type="password" name="password" placeholder="Your password"
+                                <label><i class="zmdi zmdi-lock"></i></label> <input style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"
+                                    type="password" name="password" placeholder="Mật khẩu"
                                     required="required" maxlength="32"/>
                             </div>
 
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me"
-                                       class="agree-term"/> <label for="remember-me"
-                                                                   class="label-agree-term"><span><span></span></span>Remember
-                                me</label>
+                                       class="agree-term"/> <label style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;" for="remember-me"
+                                                                   class="label-agree-term"><span><span></span></span>Nhớ mật khẩu</label>
                             </div>
 
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin"
-                                       class="form-submit" value="Log in"/>
+                                <input style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"type="submit" name="signin" id="signin"
+                                       class="form-submit" value="ĐĂNG NHẬP"/>
                             </div>
 
                         </form>
 
                     </div>
 
-                    <div class="signin-image">
+                    <div class="signin-image" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
                         <figure>
-                            <img src="shop/images/logo-store.jpg" alt="sing up image">
+                            <img src="shop/images/logo-store.png" alt="sing up image">
                         </figure>
-                        <a href="register">Create an account</a>
+                        <a href="register">Tạo tài khoản mới</a>
                     </div>
                 </div>
             </div>

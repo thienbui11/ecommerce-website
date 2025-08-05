@@ -7,24 +7,22 @@
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="${pageContext.request.contextPath}/"><i
-                    class="fas fa-shopping-bag primary-color mr-1"></i> Venus</a>
+                    class="fas fa-shopping-bag primary-color mr-1"></i> Fashion</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbar-1" aria-controls="navbar-1"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div
+            <div style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"
                     class="collapse navbar-collapse pull-xs-right justify-content-end"
                     id="navbar-1">
                 <ul class="navbar-nav mt-2 mt-md-0">
-                    <li class="nav-item active"><a class="nav-link" href="${pageContext.request.contextPath}/">Home
-                    </a></li>
-                    <li class="nav-item active"><a class="nav-link" href="view_all">Shop
+                    <li class="nav-item active"><a class="nav-link" href="${pageContext.request.contextPath}/">Trang Chủ
                     </a></li>
                     <li class="nav-item dropdown mega-menu"><a
                             class="nav-link dropdown-toggle" href="#"
                             role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Category</a>
+                            aria-expanded="false">Danh mục</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="container">
                                 <div class="divider"></div>
@@ -40,16 +38,16 @@
                         </div>
                     </li>
 
-                    <li class="nav-item dropdown"><a
-                            class="nav-link dropdown-toggle" href="#"
-                            role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Pages </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="${pageContext.request.contextPath}/">Homepage</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="view_cart">Cart</a>
-                        </div>
-                    </li>
+<%--                    <li class="nav-item dropdown"><a--%>
+<%--                            class="nav-link dropdown-toggle" href="#"--%>
+<%--                            role="button" data-toggle="dropdown" aria-haspopup="true"--%>
+<%--                            aria-expanded="false">Pages </a>--%>
+<%--                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">--%>
+<%--                            <a class="dropdown-item" href="${pageContext.request.contextPath}/">Homepage</a>--%>
+<%--                            <div class="dropdown-divider"></div>--%>
+<%--                            <a class="dropdown-item" href="view_cart">Cart</a>--%>
+<%--                        </div>--%>
+<%--                    </li>--%>
 
                     <li class="nav-item"><a class="nav-link" href="show_contact">Liên Lạc</a></li>
 
@@ -67,7 +65,7 @@
                             </c:if>
 
                             <c:if test="${loggedCustomer != null}">
-                                <a href="view_profile" class="dropdown-item">Welcome,
+                                <a href="view_profile" class="dropdown-item">Chào mừng,
                                         ${loggedCustomer.fullName}</a>
                                 <div class="dropdown-divider"></div>
                                 <a href="view_order" class="dropdown-item">Đơn hàng của tôi</a>
@@ -108,7 +106,7 @@
                             </ul>
 
                             <a href="view_cart" class="btn btn-lg btn-full-width btn-primary"
-                               style="margin: 0;">View Cart</a>
+                               style="margin: 0;">Xem giỏ hàng</a>
                         </div>
                     </li>
                     <li class="nav-item">

@@ -4,13 +4,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>${loggedCustomer.fullName} Reviews</title>
+    <title>${loggedCustomer.fullName} Đánh giá</title>
 
     <%@ include file="common.jsp" %>
 </head>
 <body>
 <%@ include file="header.jsp" %>
-<h2 class="products text-center">${loggedCustomer.fullName} Reviews</h2>
+<h2 class="products text-center" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">${loggedCustomer.fullName} Review</h2>
 
 <div class="container">
     <div class="row">
@@ -21,8 +21,8 @@
         </div>
         <div class="col-md-6 mt-5 mt-md-2 text-center text-md-left">
             <h2 class="mb-3 mt-0">${product.title}</h2>
-            <p>Your review has been posted. Thank you!</p>
-            <a href="${pageContext.request.contextPath}/" class="signup-image-link">Continue Shopping</a>
+            <p style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Đánh giá của bạn đã được ghi nhận. Xin cảm ơn!</p>
+            <a href="${pageContext.request.contextPath}/" class="signup-image-link">Tiếp tục mua hàng</a>
         </div>
     </div>
 </div>

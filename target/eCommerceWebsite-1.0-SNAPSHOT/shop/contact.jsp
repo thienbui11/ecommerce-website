@@ -8,7 +8,7 @@
 
     <%@ include file="common.jsp" %>
 
-    <title>Contact</title>
+    <title>Liên hệ</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row contact-details">
             <div class="col-sm-8 text-center text-md-left">
-                <h3 class="mb-4">Ask us a question</h3>
+                <h3 class="mb-4" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Chăm sóc khách hàng</h3>
                 <form action="send_contact" method="post" enctype="multipart/form-data" class="contact-form mt-4">
                     <div class="row">
                         <div class="col-md-5">
@@ -31,32 +31,32 @@
                         <br/>
                     </div>
                     <div class="row">
-                        <div class="col-md-10">
+                        <div class="col-md-10" style="height: 10em !important;">
                             <textarea class="form-control mb-4" rows="5" style="height: 10em !important;" name="content"
-                                      required="required">Your contact details.</textarea>
+                                      required="required">Nhập nội dung.</textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-5">
                             <input type="file" name="file" size="50"/>
                         </div>
-                        <label class="col-md-5">(If needed.)</label>
+                        <label class="col-md-5">(Nếu có)</label>
                     </div>
                     <div class="row">
                         <div class="col-md-5">
-                            <button type="submit" class="btn btn-outline-primary btn-lg mb-4">Send Message
+                            <button type="submit" class="btn btn-outline-primary btn-lg mb-4">Gửi Email
                             </button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-sm-4 mb-5 text-center text-md-left">
-                <h3>Contact</h3>
+                <h3 style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Liên hệ</h3>
                 <h4 class="pt-4">Email</h4>
-                <p>contact@shop.com</p>
+                <p>21110656@student.hcmute.edu.vn</p>
                 <h4 class="pt-2">Phone</h4>
                 <p>+111 999 888 77</p>
-                <h4 class="pt-2">Address</h4>
+                <h4 class="pt-2">Địa Chỉ</h4>
                 <p>Ho Chi Minh City<br/>Viet Nam</p>
             </div>
         </div>

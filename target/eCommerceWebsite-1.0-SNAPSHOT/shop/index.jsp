@@ -8,7 +8,7 @@
 
     <%@ include file="common.jsp" %>
 
-    <title>Home Page</title>
+    <title>Trang Chủ</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -17,17 +17,17 @@
     <div class="slide-video">
         <div class="content-video">
             <h2>TOPS 2023 COLLECTION</h2>
-            <a href="view_category?id=1" class="btn-video">Discover the Collection</a>
+            <a href="view_category?id=1" class="btn-video">Discover the Collection for Noel</a>
         </div>
         <video class="video-dk" autoplay="autoplay" loop="loop" muted="muted">
-            <source src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/dikq6kFFzG_HD.mp4" type="video/mp4">
+            <source src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/PHmePufzcE_HD.mp4" type="video/mp4">
         </video>
     </div>
 </div>
 <div class="divider"></div>
 <section class="products text-center">
-    <div class="container">
-        <h3 class="mb-4">Các sản phẩm mới</h3>
+    <div class="container" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+        <h3 class="mb-4" style="font-family:courier,Verdana,helvetica;" >NHỮNG SẢN PHẨM MỚI</h3>
         <div class="row">
             <c:forEach items="${listNewProducts}" var="product" begin="0" end="3">
                 <div class="col-sm-6 col-md-3 col-product">
@@ -51,7 +51,7 @@
 <div class="divider"></div>
 <section class="products text-center">
     <div class="container">
-        <h3 class="mb-4">Những mặt hàng bán chạy nhất</h3>
+        <h3 class="mb-4" style="font-family:courier,Verdana,helvetica;">SẢN PHẨM BÁN CHẠY</h3>
         <div class="row">
             <c:forEach items="${listBestSellingProducts}" var="product" begin="0" end="3">
                 <div class="col-sm-6 col-md-3 col-product">
@@ -75,7 +75,7 @@
 <div class="divider"></div>
 <section class="products text-center">
     <div class="container">
-        <h3 class="mb-4">Favored Products</h3>
+        <h3 class="mb-4" style="font-family:courier,Verdana,helvetica;">SẢN PHẨM ĐƯỢC YÊU THÍCH</h3>
         <div class="row">
             <c:forEach items="${listFavoredProducts}" var="product" begin="0" end="3">
                 <div class="col-sm-6 col-md-3 col-product">

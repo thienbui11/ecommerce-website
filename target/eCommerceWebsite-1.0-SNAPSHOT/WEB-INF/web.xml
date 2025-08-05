@@ -126,15 +126,15 @@
     </context-param>
     <context-param>
         <param-name>user</param-name>
-        <param-value>admin@gmail.com</param-value>
+        <param-value>21110656@student.hcmute.edu.vn</param-value>
     </context-param>
     <context-param>
         <param-name>pass</param-name>
-        <param-value>admin</param-value>
+        <param-value>Thiendim@sh01012003</param-value>
     </context-param>
 
     <context-param>
         <param-name>recipient</param-name>
-        <param-value>admin@gmail.com</param-value>
+        <param-value>21110656@student.hcmute.edu.vn</param-value>
     </context-param>
 </web-app>

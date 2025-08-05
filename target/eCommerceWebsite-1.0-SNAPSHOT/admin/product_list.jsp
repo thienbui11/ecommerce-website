@@ -84,6 +84,7 @@
                                     <th style="width: 10%;">Category</th>
                                     <th style="width: 10%;">Price</th>
                                     <th style="width: 10%;">Last Updated</th>
+                                    <th style="width: 10%;">Stock</th>
                                     <th style="width: 5%;">Active</th>
                                     <th style="width: 25%;">Action</th>
                                 </tr>
@@ -101,6 +102,7 @@
                                         <td class="lastUpdated">
                                             <fmt:formatDate pattern='MM/dd/yyyy' value='${product.lastUpdateTime}'/>
                                         </td>
+                                        <td class="stock">${product.stock}</td>
                                         <td class="active">
                                             <c:if test="${product.active == true}">Enable</c:if>
                                             <c:if test="${product.active == false}">Disable</c:if>

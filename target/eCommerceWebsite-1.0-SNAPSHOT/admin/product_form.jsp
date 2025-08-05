@@ -71,7 +71,7 @@
                     <div class="card-body">
                         <center class="mt-4"><img src="../assets/images/logo-store.jpg" class="img-circle"
                                                   width="150"/>
-                            <h4 class="card-title mt-2">Venus Shop</h4>
+                            <h4 class="card-title mt-2">Fashion Shop</h4>
                         </center>
                     </div>
                 </div>
@@ -144,6 +144,13 @@
                                     <div class="col-md-12">
                                         <textarea class="form-control form-control-line" rows="5" cols="50"
                                                   name="description" id="description">${product.description}</textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="stock" class="col-md-12">Stock</label>
+                                    <div class="col-md-12">
+                                        <input class="form-control form-control-line" type="text" id="stock"
+                                               name="stock" size="20" value="${product.stock}"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -232,6 +239,11 @@
                                         <textarea class="form-control form-control-line" rows="5" cols="50"
                                                   name="description" id="description">${product.description}</textarea>
                                     </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="description" class="col-md-12">Stock</label>
+                                    <input class="form-control form-control-line" type="text" id="stock"
+                                           name="stock" size="20" value="${product.stock}"/>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Active</label>

@@ -19,13 +19,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-lg-3 sidebar-filter">
-            <h3 class="mt-5 mb-5">
-                <span class="primary-color"></span> Showing Products
+            <h3 class="mt-5 mb-5" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+                <span class="primary-color"></span> Hiển thị sản phẩm
             </h3>
 
-            <p class="text-uppercase"><a style="color: #444342" href="view_all">Shop All</a></p>
-
-            <p class="text-uppercase">Categories</p>
+            <p class="text-uppercase" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Danh mục</p>
 
             <c:forEach items="${listCategories}" var="category">
                 <div class="filter-checkbox">
@@ -34,7 +32,7 @@
                 </div>
             </c:forEach>
 
-            <p class="text-uppercase">Rating</p>
+            <p class="text-uppercase" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">Đánh giá</p>
 
             <div class="filter-checkbox">
                 <a href="view_category?id=${category.categoryId}&sort=${'4.5'}" style="color: #444342">
@@ -76,26 +74,22 @@
                     <div class="row sorting mb-5">
                         <div class="col-12">
                             <div class="dropdown float-left">
-                                <label class="mr-2">Sort by:</label> <a
-                                    class="btn btn-lg btn-white dropdown-toggle"
+                                <a
+                                    class="btn btn-lg btn-white dropdown-toggle" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"
                                     data-toggle="dropdown" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Relevance <span
+                                    aria-haspopup="true" aria-expanded="false">SẮP XẾP THEO <span
                                     class="caret"></span></a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
                                     <a class="dropdown-item"
-                                       href="view_category?id=${category.categoryId}&sort=${'price_desc'}">Price
-                                        Descending</a>
+                                       href="view_category?id=${category.categoryId}&sort=${'price_desc'}">Giá giảm dần</a>
                                     <a class="dropdown-item"
-                                       href="view_category?id=${category.categoryId}&sort=${'price_asc'}">Price
-                                        Ascending</a>
+                                       href="view_category?id=${category.categoryId}&sort=${'price_asc'}">Giá tăng dần</a>
                                     <a class="dropdown-item"
-                                       href="view_category?id=${category.categoryId}&sort=${'newest'}">Newest</a>
+                                       href="view_category?id=${category.categoryId}&sort=${'newest'}">Mới nhất</a>
                                     <a class="dropdown-item"
-                                       href="view_category?id=${category.categoryId}&sort=${'best_selling'}">Best
-                                        Selling</a>
+                                       href="view_category?id=${category.categoryId}&sort=${'best_selling'}">Mua nhiều nhất</a>
                                     <a class="dropdown-item"
-                                       href="view_category?id=${category.categoryId}&sort=${'most_favored'}">Most
-                                        Favored</a>
+                                       href="view_category?id=${category.categoryId}&sort=${'most_favored'}">Được yêu thích nhất</a>
                                 </div>
                             </div>
 

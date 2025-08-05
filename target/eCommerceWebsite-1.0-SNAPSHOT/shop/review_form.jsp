@@ -13,11 +13,11 @@
     <script type="text/javascript" src="shop/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="shop/js/jquery.rateyo.min.js"></script>
 
-    <title>${loggedCustomer.fullName} Reviews</title>
+    <title>${loggedCustomer.fullName} Review</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>
-<h2 class="products text-center">${loggedCustomer.fullName} Reviews</h2>
+<h2 class="products text-center" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">${loggedCustomer.fullName} Review </h2>
 <form action="submit_review" method="post">
     <div class="container">
         <div class="row">
@@ -27,15 +27,15 @@
                 </div>
             </div>
             <div class="col-md-6 mt-5 mt-md-2 text-center text-md-left">
-                <h2 class="mb-3 mt-0">${product.title}</h2>
+                <h2 class="mb-3 mt-0" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">${product.title}</h2>
                 <p class="lead mt-2 mb-3 primary-color">
                 <div id="rateYo"></div>
                 <input type="hidden" id="rating" name="rating"/>
                 <input type="hidden" name="productId" value="${product.productId}"/>
                 <br>
-                <input type="text" name="headline" size="60"
-                       placeholder="Headline or summary for your review (required)" required="required"/>
-                <textarea name="comment" cols="70" rows="10" placeholder="Write your review details..."
+                <input type="text" name="headline" size="60" style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;"
+                       placeholder="Tiêu đề (bắt buộc)" required="required"/>
+                <textarea style="font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;" style= font-family:nunito name="comment" cols="70" rows="10" placeholder="Viết chi tiết đánh giá..."
                           required="required"></textarea>
                 <button class="btn btn-lg btn-outline-primary" type="submit">Submit</button>
                 &nbsp;&nbsp;

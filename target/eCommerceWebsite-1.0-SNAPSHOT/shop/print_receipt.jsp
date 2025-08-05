@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Print Receipt</title>
+    <title>In hóa đơn</title>
 </head>
 <body onload="window.print();">
 <div>
     <div>
         <div align="center">
-            <h2 style="text-transform:uppercase;">Your Payment Receipt</h2>
+            <h2 style="text-transform:uppercase;">Hóa đơn của bạn</h2>
         </div>
         <div>
-            <h2 style="text-transform:uppercase;">Seller Information</h2>
+            <h2 style="text-transform:uppercase;">Thông tin người bán hàng</h2>
             <div>
                 <table>
                     <tr>
@@ -28,15 +28,15 @@
             </div>
         </div>
         <div>
-            <h2 style="text-transform:uppercase;">Buyer Information</h2>
+            <h2 style="text-transform:uppercase;">Thông tin người đặt hàng</h2>
             <div>
                 <table>
                     <tr>
-                        <td><b>First Name: </b></td>
+                        <td><b>Họ và tên lót: </b></td>
                         <td>${payer.firstName}</td>
                     </tr>
                     <tr>
-                        <td><b>Last Name: </b></td>
+                        <td><b>Tên: </b></td>
                         <td>${payer.lastName}</td>
                     </tr>
                     <tr>
@@ -50,8 +50,8 @@
 </div>
 <div>
     <div>
-        <h2 style="text-transform:uppercase;">Order Details</h2>
-        <p>Ordered by ${loggedCustomer.fullName}</p>
+        <h2 style="text-transform:uppercase;">Chi tiết hóa đơn</h2>
+        <p>Người đặt hàng: ${loggedCustomer.fullName}</p>
         <p>${transaction.description}</p>
     </div>
     <div>
@@ -59,10 +59,10 @@
             <thead>
             <tr>
                 <th style="width: 5%">No.</th>
-                <th style="width: 50%">Name</th>
-                <th style="width: 10%">Quantity</th>
-                <th style="width: 10%">Price</th>
-                <th style="width: 25%">Subtotal</th>
+                <th style="width: 50%">Tên</th>
+                <th style="width: 10%">Số lượng</th>
+                <th style="width: 10%">Giá</th>
+                <th style="width: 25%">Tổng</th>
             </tr>
             </thead>
             <tbody>
@@ -77,10 +77,10 @@
             </c:forEach>
             <tr>
                 <td colspan="5" align="right">
-                    <p>Subtotal: $${transaction.amount.details.subtotal}</p>
+                    <p>Tạm tính: $${transaction.amount.details.subtotal}</p>
                     <p>Tax: $${transaction.amount.details.tax}</p>
-                    <p>Shipping Fee: $${transaction.amount.details.shipping}</p>
-                    <p>TOTAL: $${transaction.amount.total}</p>
+                    <p>Phí vận chuyển: $${transaction.amount.details.shipping}</p>
+                    <p>TỔNG CỘNG: $${transaction.amount.total}</p>
                 </td>
             </tr>
             </tbody>
