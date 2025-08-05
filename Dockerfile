@@ -5,7 +5,7 @@ FROM tomcat:9.0
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy WAR file vào
-COPY target/ecommerce-website.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/eCommerceWebsite-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port
 EXPOSE 8080
