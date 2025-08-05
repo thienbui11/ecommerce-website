@@ -1,0 +1,9 @@
+com\ecommerce\model\dao\ProductDAOTest.class
+com\ecommerce\model\dao\OrderDAOTest.class
+com\ecommerce\model\domain\ProductRatingTest.class
+com\ecommerce\model\dao\CategoryDAOTest.class
+com\ecommerce\model\dao\CustomerDAOTest.class
+com\ecommerce\utility\HashUtilityTest.class
+com\ecommerce\model\dao\ReviewDAOTest.class
+com\ecommerce\model\dao\UserDAOTest.class
+com\ecommerce\model\domain\CartTest.class
